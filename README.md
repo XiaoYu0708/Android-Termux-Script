@@ -15,3 +15,9 @@ chmod +x install_debian.sh
 chmod +x debian_fast_apt.sh
 ./debian_fast_apt.sh
 ```
+
+## 登入Proot Debian，使用Root帳號。
+```
+chmod +x login_debian.sh
+./login_debian.sh
+```
