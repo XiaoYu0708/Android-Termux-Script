@@ -27,3 +27,10 @@ chmod +x login_debian.sh
 chmod +x install_conda.sh
 ./install_conda.sh
 ```
+
+## 設定Anaconda環境，Python 3.12
+```
+chmod +x setup_conda_python_3.12.sh
+./setup_conda_python_3.12.sh
+```
+
