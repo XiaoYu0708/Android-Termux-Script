@@ -21,3 +21,9 @@ chmod +x debian_fast_apt.sh
 chmod +x login_debian.sh
 ./login_debian.sh
 ```
+
+## 安裝Anaconda環境
+```
+chmod +x install_conda.sh
+./install_conda.sh
+```
