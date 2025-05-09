@@ -13,12 +13,6 @@ chmod +x *.sh
 ./install_debian.sh
 ```
 
-## 更換Debian映射站台
-此為選擇性步驟。更改映射站，加快套件下載速度。
-```
-./debian_fast_apt.sh
-```
-
 ## 登入Proot Debian，使用Root帳號。
 ```
 ./login_debian.sh
