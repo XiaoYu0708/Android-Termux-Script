@@ -60,7 +60,7 @@ tmux ls
 
 ## 重新連線 tmux 終端
 ```sh
-tmux attach -t 名稱
+tmux attach
 ```
 
 ## 先 detach 當前終端（離開而不終止）
