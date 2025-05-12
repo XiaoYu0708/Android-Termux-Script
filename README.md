@@ -14,17 +14,26 @@ chmod +x *.sh
 ```
 
 ## 登入Proot Debian，使用Root帳號。
-```
+```sh
 ./login_debian.sh
 ```
 
 ## 安裝Anaconda環境
-```
+```sh
 ./install_conda.sh
 ```
 
 ## 設定Anaconda環境，Python 3.12
-```
+```sh
 ./setup_conda_python_3.12.sh
 ```
 
+## 設定ssh連線
+```sh
+apt install dropbear
+dropbear -F -E -p 2222
+```
+- Windows CMD 連線到 ssh
+```cmd
+ssh root@192.168.X.X -p 2222
+```
