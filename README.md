@@ -62,3 +62,8 @@ tmux ls
 ```sh
 tmux attach -t 名稱
 ```
+
+## 先 detach 當前終端（離開而不終止）
+`
+Ctrl + b 然後按 d
+`
