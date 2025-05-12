@@ -28,12 +28,17 @@ chmod +x *.sh
 ./setup_conda_python_3.12.sh
 ```
 
-## 設定ssh連線
+## 安裝 ssh 連線
 ```sh
 apt install dropbear
+```
+
+## 啟用 ssh 連線
+```sh
 dropbear -F -E -p 2222
 ```
-- Windows CMD 連線到 ssh
+
+## Windows CMD 連線到 ssh
 ```cmd
 ssh root@192.168.X.X -p 2222
 ```
