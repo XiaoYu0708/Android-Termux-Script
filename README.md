@@ -42,3 +42,23 @@ dropbear -F -E -p 2222
 ```cmd
 ssh root@192.168.X.X -p 2222
 ```
+
+## 安裝 tmux
+```sh
+sudo apt install tmux
+```
+
+## 啟用 tmux 新終端
+```sh
+tmux 
+```
+
+## 列出 tmux 終端
+```sh
+tmux ls
+```
+
+## 重新連線 tmux 終端
+```sh
+tmux attach -t 名稱
+```
