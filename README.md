@@ -67,3 +67,8 @@ tmux attach -t 名稱
 `
 Ctrl + b 然後按 d
 `
+
+## 切換 tmux 終端視窗
+`
+Ctrl + b 然後按 w
+`
