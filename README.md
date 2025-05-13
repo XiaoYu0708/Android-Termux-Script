@@ -1,4 +1,4 @@
-# Android-Turmux-Script
+# Android-Termux-Script
 
 Termux [Play Store](https://play.google.com/store/apps/details?id=com.termux)
 
