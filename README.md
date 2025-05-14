@@ -126,3 +126,7 @@ $localhost="no";
 ```sh
 vncserver
 ```
+## 中止 VNC 伺服器
+```sh
+vncserver -kill :1
+```
