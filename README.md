@@ -72,3 +72,29 @@ Ctrl + b 然後按 d
 `
 Ctrl + b 然後按 w
 `
+## 新增wheel和video群組
+```sh
+groupadd storage
+groupadd wheel
+groupadd video
+```
+## 新增一般帳戶"xiaoyu"，並修改密碼。
+```sh
+useradd -m -g users -G wheel,audio,video,storage -s /bin/bash xiaoyu
+passwd xiaoyu
+```
+## 將xiaoyu加入sudo群組
+- 先執行：
+```sh
+nano /etc/sudoers
+```
+- 找到`root ALL=(ALL:ALL) ALL`那一行，在下一行加入以下內容：
+```txt
+xiaoyu ALL=(ALL:ALL) ALL
+```
+## 切換一般帳戶 (xiaoyu)
+```sh
+su xiaoyu
+cd
+```
+
