@@ -6,11 +6,7 @@ termux-setup-storage
 pkg install proot-distro pulseaudio vim
 
 #安裝Proot Debian
-proot-distro install debian
+proot-distro install ubuntu
 
 #登入Debian。--user參數表示登入指定帳戶，目前是root。--shared-tmp則是將Termux的tmp目錄掛載至proot內部以共享X伺服器資源。
-proot-distro login debian --user root --shared-tmp
-
-#登入後先安裝sudo、vim、Firefox瀏覽器
-apt update
-apt install sudo vim firefox-esr
+proot-distro login ubuntu --user root --shared-tmp
