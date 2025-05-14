@@ -36,7 +36,7 @@ apt install sudo vim nano
 
 ## 安裝 ssh 連線
 ```sh
-apt install dropbear
+sudo apt install dropbear
 ```
 
 ## 啟用 ssh 連線
