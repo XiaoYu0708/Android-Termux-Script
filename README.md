@@ -35,7 +35,7 @@ apt install dropbear
 
 ## 啟用 ssh 連線
 ```sh
-dropbear -F -E -p 2222
+sudo dropbear -F -E -p 2222
 ```
 
 ## Windows CMD 連線到 ssh
