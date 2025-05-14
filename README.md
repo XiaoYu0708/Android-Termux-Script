@@ -7,15 +7,21 @@ Termux [Play Store](https://play.google.com/store/apps/details?id=com.termux)
 chmod +x *.sh
 ```
 
-## 安裝Debian最小檔案系統
+## 安裝Ubuntu最小檔案系統
 這裡的最小檔案系統指的是proot-distro開發者提供的rootfs。
 ```sh
-./install_debian.sh
+./install_ubuntu.sh
 ```
 
-## 登入Proot Debian，使用Root帳號。
+## 登入後先安裝sudo、vim、nano
 ```sh
-./root_login_debian.sh
+apt update
+apt install sudo vim nano
+```
+
+## 登入Proot Ubuntu，使用Root帳號。
+```sh
+./root_login_ubuntu.sh
 ```
 
 ## 安裝Anaconda環境
@@ -78,27 +84,27 @@ groupadd storage
 groupadd wheel
 groupadd video
 ```
-## 新增一般帳戶"xiaoyu"，並修改密碼。
+## 新增一般帳戶"user"，並修改密碼。
 ```sh
-useradd -m -g users -G wheel,audio,video,storage -s /bin/bash xiaoyu
-passwd xiaoyu
+useradd -m -g users -G wheel,audio,video,storage -s /bin/bash user
+passwd user
 ```
-## 將xiaoyu加入sudo群組
+## 將 user 加入 sudo 群組
 - 先執行：
 ```sh
 nano /etc/sudoers
 ```
 - 找到`root ALL=(ALL:ALL) ALL`那一行，在下一行加入以下內容：
 ```txt
-xiaoyu ALL=(ALL:ALL) ALL
+user ALL=(ALL:ALL) ALL
 ```
-## 切換一般帳戶 (xiaoyu)
+## 切換一般帳戶 (user)
 ```sh
-su xiaoyu
+su user
 cd
 ```
-## 登入Proot Debian，使用xiaoyu帳號。
+## 登入Proot Ubuntu，使用 user 帳號。
 ```sh
-./xiaoyu_login_debian.sh
+./user_login_ubuntu.sh
 ```
 
