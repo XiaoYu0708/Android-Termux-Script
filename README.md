@@ -15,7 +15,7 @@ chmod +x *.sh
 
 ## 登入Proot Debian，使用Root帳號。
 ```sh
-./login_debian.sh
+./root_login_debian.sh
 ```
 
 ## 安裝Anaconda環境
@@ -96,5 +96,9 @@ xiaoyu ALL=(ALL:ALL) ALL
 ```sh
 su xiaoyu
 cd
+```
+## 登入Proot Debian，使用xiaoyu帳號。
+```sh
+./xiaoyu_login_debian.sh
 ```
 
