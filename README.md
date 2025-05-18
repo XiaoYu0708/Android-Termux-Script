@@ -1,6 +1,6 @@
 # Android-Termux-Script
 
-Termux [Play Store](https://play.google.com/store/apps/details?id=com.termux)
+Termux [F-Droid](https://f-droid.org/packages/com.termux/)
 
 ## 設定執行權限
 ```sh
