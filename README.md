@@ -69,6 +69,20 @@ tmux ls
 tmux attach
 ```
 
+## 設定 tmux 中啟用滾動
+- 編輯
+```sh
+nano ~/.tmux.conf
+```
+- 輸入
+```txt
+set -g mouse on
+```
+- 套用設定
+```sh
+tmux source ~/.tmux.conf
+```
+
 ## 先 detach 當前終端（離開而不終止）
 `
 Ctrl + b 然後按 d
