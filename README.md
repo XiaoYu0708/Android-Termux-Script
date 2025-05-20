@@ -83,6 +83,11 @@ set -g mouse on
 tmux source ~/.tmux.conf
 ```
 
+## 在視窗中分割出新終端
+`
+Ctrl + b 然後按 c
+`
+
 ## 先 detach 當前終端（離開而不終止）
 `
 Ctrl + b 然後按 d
