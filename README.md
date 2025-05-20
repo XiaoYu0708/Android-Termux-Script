@@ -46,7 +46,7 @@ sudo dropbear -F -E -p 2222
 
 ## Windows CMD 連線到 ssh
 ```cmd
-ssh root@192.168.X.X -p 2222
+ssh user@192.168.X.X -p 2222
 ```
 
 ## 安裝 tmux
