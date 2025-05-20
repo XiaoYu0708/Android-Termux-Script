@@ -34,11 +34,6 @@ apt install sudo vim nano
 ./setup_conda_python_3.12.sh
 ```
 
-## 啟用conda環境，Python 3.12
-```sh
-conda activate python_3.12
-```
-
 ## 安裝 ssh 連線
 ```sh
 sudo apt install dropbear
