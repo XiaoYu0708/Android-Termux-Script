@@ -127,3 +127,8 @@ cd
 ./user_login_ubuntu.sh
 ```
 
+## 設定台灣時區
+```sh
+sudo ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
+```
+
