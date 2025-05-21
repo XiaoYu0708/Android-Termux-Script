@@ -24,6 +24,41 @@ apt install sudo vim nano
 ./root_login_ubuntu.sh
 ```
 
+## 新增wheel和video群組
+```sh
+groupadd storage
+groupadd wheel
+groupadd video
+```
+## 新增一般帳戶"user"，並修改密碼。
+```sh
+useradd -m -g users -G wheel,audio,video,storage -s /bin/bash user
+passwd user
+```
+## 將 user 加入 sudo 群組
+- 先執行：
+```sh
+nano /etc/sudoers
+```
+- 找到`root ALL=(ALL:ALL) ALL`那一行，在下一行加入以下內容：
+```txt
+user ALL=(ALL:ALL) ALL
+```
+## 切換一般帳戶 (user)
+```sh
+su user
+cd
+```
+## 登入Proot Ubuntu，使用 user 帳號。
+```sh
+./user_login_ubuntu.sh
+```
+
+## 設定台灣時區
+```sh
+sudo ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
+```
+
 ## 安裝Anaconda環境
 ```sh
 ./install_conda.sh
@@ -97,38 +132,4 @@ Ctrl + b 然後按 d
 `
 Ctrl + b 然後按 w
 `
-## 新增wheel和video群組
-```sh
-groupadd storage
-groupadd wheel
-groupadd video
-```
-## 新增一般帳戶"user"，並修改密碼。
-```sh
-useradd -m -g users -G wheel,audio,video,storage -s /bin/bash user
-passwd user
-```
-## 將 user 加入 sudo 群組
-- 先執行：
-```sh
-nano /etc/sudoers
-```
-- 找到`root ALL=(ALL:ALL) ALL`那一行，在下一行加入以下內容：
-```txt
-user ALL=(ALL:ALL) ALL
-```
-## 切換一般帳戶 (user)
-```sh
-su user
-cd
-```
-## 登入Proot Ubuntu，使用 user 帳號。
-```sh
-./user_login_ubuntu.sh
-```
-
-## 設定台灣時區
-```sh
-sudo ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
-```
 
