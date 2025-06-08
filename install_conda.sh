@@ -2,7 +2,7 @@
 
 # 安裝miniforge3
 sudo apt update
-sudo apt install wget python3 python3-pip vim
+sudo apt install wget python3 python3-pip vim -y
 
 alias python=/usr/bin/python3
 alias python3=/usr/bin/python3
