@@ -2,15 +2,10 @@
 
 Termux [F-Droid](https://f-droid.org/packages/com.termux/)
 
-## 設定執行權限
-```sh
-chmod +x *.sh
-```
-
 ## 安裝Ubuntu最小檔案系統
 這裡的最小檔案系統指的是proot-distro開發者提供的rootfs。
 ```sh
-./install_ubuntu.sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/XiaoYu0708/Android-Termux-Script/refs/heads/main/install_ubuntu.sh)"
 ```
 
 ## 登入後先安裝sudo、vim、nano、git、gh
@@ -20,6 +15,11 @@ apt install sudo vim nano git gh -y
 ```
 
 ## 登入Proot Ubuntu，使用Root帳號。
+- 下載指令
+```sh
+curl https://raw.githubusercontent.com/XiaoYu0708/Android-Termux-Script/refs/heads/main/root_login_ubuntu.sh
+```
+- 使用指令
 ```sh
 ./root_login_ubuntu.sh
 ```
@@ -50,6 +50,12 @@ su user
 cd
 ```
 ## 登入Proot Ubuntu，使用 user 帳號。
+- 下載指令
+```sh
+curl https://raw.githubusercontent.com/XiaoYu0708/Android-Termux-Script/refs/heads/main/user_login_ubuntu.sh
+chmod +x ./user_login_ubuntu.sh
+```
+- 使用指令
 ```sh
 ./user_login_ubuntu.sh
 ```
@@ -61,12 +67,12 @@ sudo ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
 
 ## 安裝Anaconda環境
 ```sh
-./install_conda.sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/XiaoYu0708/Android-Termux-Script/refs/heads/main/install_conda.sh)"
 ```
 
 ## 設定Anaconda環境，Python 3.12
 ```sh
-./setup_conda_python_3.12.sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/XiaoYu0708/Android-Termux-Script/refs/heads/main/setup_conda_python_3.12.sh)"
 ```
 
 ## 安裝 ssh 連線
