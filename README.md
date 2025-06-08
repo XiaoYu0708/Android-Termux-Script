@@ -17,7 +17,7 @@ apt install sudo vim nano git gh -y
 ## 登入Proot Ubuntu，使用Root帳號。
 - 下載指令
 ```sh
-curl https://raw.githubusercontent.com/XiaoYu0708/Android-Termux-Script/refs/heads/main/root_login_ubuntu.sh
+wget https://raw.githubusercontent.com/XiaoYu0708/Android-Termux-Script/refs/heads/main/root_login_ubuntu.sh
 ```
 - 使用指令
 ```sh
@@ -52,7 +52,7 @@ cd
 ## 登入Proot Ubuntu，使用 user 帳號。
 - 下載指令
 ```sh
-curl https://raw.githubusercontent.com/XiaoYu0708/Android-Termux-Script/refs/heads/main/user_login_ubuntu.sh
+wget https://raw.githubusercontent.com/XiaoYu0708/Android-Termux-Script/refs/heads/main/user_login_ubuntu.sh
 chmod +x ./user_login_ubuntu.sh
 ```
 - 使用指令
