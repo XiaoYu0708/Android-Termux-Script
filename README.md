@@ -13,10 +13,10 @@ chmod +x *.sh
 ./install_ubuntu.sh
 ```
 
-## 登入後先安裝sudo、vim、nano
+## 登入後先安裝sudo、vim、nano、git、gh
 ```sh
 apt update
-apt install sudo vim nano
+apt install sudo vim nano git gh -y
 ```
 
 ## 登入Proot Ubuntu，使用Root帳號。
