@@ -77,12 +77,22 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/XiaoYu0708/Android-Termux-
 
 ## 安裝 ssh 連線
 ```sh
-sudo apt install dropbear
+apt-get install openssh-server
 ```
 
-## 啟用 ssh 連線
+##  修改 ssh 連線設定
 ```sh
-sudo dropbear -F -E -p 2222
+vim /etc/ssh/sshd_config
+```
+
+```txt
+Port 5555
+PermitRootLogin yes -> 開放 root 登入，開放使用密碼登入
+PasswordAuthentication yes
+```
+- 更改完存檔後記得重啟服務
+```
+sudo /etc/init.d/ssh restart
 ```
 
 ## Windows CMD 連線到 ssh
