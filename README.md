@@ -77,7 +77,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/XiaoYu0708/Android-Termux-
 
 ## 安裝 ssh 連線
 ```sh
-apt-get install openssh-server
+sudo apt install openssh-server
 ```
 
 ##  修改 ssh 連線設定
