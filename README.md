@@ -82,7 +82,7 @@ sudo apt install openssh-server
 
 ##  修改 ssh 連線設定
 ```sh
-vi /etc/ssh/sshd_config
+sudo vi /etc/ssh/sshd_config
 ```
 
 ```txt
