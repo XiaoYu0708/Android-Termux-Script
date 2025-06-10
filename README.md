@@ -8,10 +8,10 @@ Termux [F-Droid](https://f-droid.org/packages/com.termux/)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/XiaoYu0708/Android-Termux-Script/refs/heads/main/install_ubuntu.sh)"
 ```
 
-## 登入後先安裝sudo、vim、nano、git、gh
+## 登入後先安裝sudo、vim、git、gh
 ```sh
 apt update
-apt install sudo vim nano git gh -y
+apt install sudo vim git gh -y
 ```
 
 ## 登入Proot Ubuntu，使用Root帳號。
@@ -38,7 +38,7 @@ passwd user
 ## 將 user 加入 sudo 群組
 - 先執行：
 ```sh
-nano /etc/sudoers
+vi /etc/sudoers
 ```
 - 找到`root ALL=(ALL:ALL) ALL`那一行，在下一行加入以下內容：
 ```txt
@@ -82,7 +82,7 @@ apt-get install openssh-server
 
 ##  修改 ssh 連線設定
 ```sh
-vim /etc/ssh/sshd_config
+vi /etc/ssh/sshd_config
 ```
 
 ```txt
@@ -123,7 +123,7 @@ tmux attach
 ## 設定 tmux 中啟用滾動
 - 編輯
 ```sh
-nano ~/.tmux.conf
+vi ~/.tmux.conf
 ```
 - 輸入
 ```txt
