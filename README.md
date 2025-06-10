@@ -86,7 +86,7 @@ vim /etc/ssh/sshd_config
 ```
 
 ```txt
-Port 5555
+Port 2222
 PermitRootLogin yes -> 開放 root 登入，開放使用密碼登入
 PasswordAuthentication yes
 ```
