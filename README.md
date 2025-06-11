@@ -64,6 +64,11 @@ chmod +x ./user_login_ubuntu.sh
 ```sh
 sudo ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
 ```
+- 設定24小時制，設定後需要重新登入
+```sh
+localectl set-locale LC_TIME="en_GB.UTF-8"
+```
+
 
 ## 安裝Anaconda環境
 ```sh
