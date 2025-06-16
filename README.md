@@ -105,6 +105,16 @@ sudo /etc/init.d/ssh restart
 ssh user@192.168.X.X -p 2222
 ```
 
+## 在Git Bash 下建立密鑰對
+``` sh
+ssh-keygen
+```
+
+## 將建立的公鑰透過 ssh 傳送到遠端
+```sh
+ssh-copy-id [user]@[vps_ip]
+```
+
 ## 安裝 tmux
 ```sh
 sudo apt install tmux
